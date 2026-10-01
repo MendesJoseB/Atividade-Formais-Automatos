@@ -73,7 +73,7 @@ def extrair_de_bloco(bloco):
 def extrair_palestrantes(origem=ARQUIVO_PAGINA):
     if not origem.exists():
         raise FileNotFoundError(
-            f"Arquivo {origem} nao encontrado. Execute a tarefa 002 primeiro."
+            f"Arquivo {origem} nao encontrado, executar a tarefa 002 primeiro."
         )
 
     codigo_fonte = origem.read_text(encoding="utf-8")
